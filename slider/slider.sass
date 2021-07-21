@@ -6,10 +6,12 @@ $main-color: #527CCD;
     color: $main-color
     font-family: 'Roboto', sans-serif
     overflow: hidden
+    width: 1200px
+    margin: 0 auto
     .slider-track
         display: flex
-        justify-content: center
-        align-items: space-between
+        justify-content: start
+        align-items: space-between     
         .slider-item
             display: flex
             flex-direction: column
@@ -17,7 +19,8 @@ $main-color: #527CCD;
             margin: 0 20px
             width: 260px
             box-sizing: border-box
-            border: 2px solid $main-color
+            border: 1px solid $main-color
+            transition: all 0.5s
             .slider-item-date
                 margin: 10px 0
                 font-size: 12px
@@ -28,4 +31,4 @@ $main-color: #527CCD;
                 line-height: 26px
             .slider-item-text
                 font-size: 12px
-                position: relative
+                line-height: 22px
