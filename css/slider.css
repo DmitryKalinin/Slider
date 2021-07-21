@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.slider-container {
+  color: #527CCD;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+.slider-container .slider-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+}
+
+.slider-container .slider-track .slider-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  margin: 0 20px;
+  width: 260px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #527CCD;
+}
+
+.slider-container .slider-track .slider-item .slider-item-date {
+  margin: 10px 0;
+  font-size: 12px;
+}
+
+.slider-container .slider-track .slider-item .slider-item-title {
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.slider-container .slider-track .slider-item .slider-item-text {
+  font-size: 12px;
+  position: relative;
+}
+/*# sourceMappingURL=slider.css.map */
