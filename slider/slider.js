@@ -36,7 +36,7 @@ class Slider {
         if (this.position < 0) {
             this.position = 0;
         }
-        this.setPosition(2);
+        this.setPosition('prev');
         this.checkBtns();
     }
 
@@ -45,16 +45,14 @@ class Slider {
         if (this.position > this.maxPosition) {
             this.position = 0;
         }
-        this.setPosition(1);
+        this.setPosition('next');
         this.checkBtns();
     }
 
-    setPosition(q) {
+    setPosition(action) {
         for (let i = 0; i < this.items.length; i++) {
-
-
-            q === 1 ? this.items[i].style.transform += `translateX(${-(this.items[i].clientWidth+40)}px)` : false;
-            q === 2 ? this.items[i].style.transform += `translateX(${this.items[i].clientWidth+40}px)` : false;
+            action === 'next' ? this.items[i].style.transform += `translateX(${-(this.items[i].clientWidth+40)}px)` : false;
+            action === 'prev' ? this.items[i].style.transform += `translateX(${this.items[i].clientWidth+40}px)` : false;
         }
     }
 
